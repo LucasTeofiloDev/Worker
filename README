@@ -1,0 +1,37 @@
+
+# Worker
+
+O Worker é uma aplicação desenvolvida para o gerenciamento de tarefas assíncronas e processamento de demandas em segundo plano. O objetivo principal do projeto é oferecer uma estrutura robusta para lidar com operações que não devem bloquear o fluxo principal da aplicação, garantindo escalabilidade e alta disponibilidade.
+
+## Sobre o Projeto
+
+Este serviço atua como um consumidor de filas ou executor de tarefas agendadas, permitindo que processos pesados (como envio de e-mails, processamento de dados ou integração com APIs externas) sejam realizados de forma isolada. A arquitetura foca na separação de responsabilidades e na resiliência do sistema.
+
+## Funcionalidades
+
+* Consumo e processamento de mensagens em filas.
+* Execução de tarefas agendadas (Cron jobs).
+* Sistema de retentativa (Retry) para tratamento de falhas.
+* Monitoramento de logs de execução.
+* Preparado para deploy em ambientes de microsserviços.
+
+## Tecnologias Utilizadas
+
+* Linguagem: Java / Kotlin (JVM)
+* Framework: Spring Boot
+* Mensageria: RabbitMQ / Redis
+* Banco de Dados: PostgreSQL / MySQL
+* Gerenciamento de Dependências: Maven / Gradle
+
+## Pré-requisitos
+
+Para executar este projeto localmente, são necessários:
+
+* JDK 17 ou superior.
+* Docker (opcional, para levantamento de serviços auxiliares).
+* Broker de mensagens configurado.
+
+## Instalação e Configuração
+
+1. Clone o repositório:
+```bash
